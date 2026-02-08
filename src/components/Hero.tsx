@@ -1,23 +1,31 @@
-import { Calendar, Clock, Shield } from 'lucide-react';
+import { Calendar, Clock, Shield } from "lucide-react";
 
 export default function Hero() {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-blue-50 to-white pt-32 pb-20">
+    <section
+      id="home"
+      className="relative bg-gradient-to-br from-blue-50 to-white pt-32 pb-20"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Advanced Diagnostic Testing for Better Health
+              Metaphase Diagnostics Now in New Chandigarh
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              State-of-the-art laboratory services with accurate results, fast turnaround times, and convenient home sample collection. Your health is our priority.
+              Led by <strong>Dr. Vikas N Dubey, MD (KEM, Mumbai)</strong>,a
+              seasoned professional with
+              <strong> 10+ years of experience. Dr. Dubey</strong> previously
+              served as lab head at
+              <strong> Pathkind Diagnostics</strong> and <strong>SRL </strong>
+              managing multiple labs across various states
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <button
@@ -67,7 +75,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                 src="/images/Metaphase.jpeg"
+                src="/images/Metaphase.jpeg"
                 alt="Medical Laboratory"
                 className="w-full h-[500px] object-cover"
               />
@@ -80,7 +88,9 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Accuracy Rate</p>
-                  <p className="text-sm text-gray-600">Trusted by 50,000+ patients</p>
+                  <p className="text-sm text-gray-600">
+                    Trusted by 50,000+ patients
+                  </p>
                 </div>
               </div>
             </div>

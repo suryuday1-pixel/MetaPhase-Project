@@ -83,7 +83,10 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
-                  <p className="text-gray-600">+91 702-702-0196</p>
+                  <p className="text-gray-600">
+                    +91 702-702-0196 <br />
+                    +91 797-796-8760
+                  </p>
                 </div>
               </div>
 

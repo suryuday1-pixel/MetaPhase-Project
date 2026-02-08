@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div className="h-12 flex items-center overflow-hidden">
                 <img
-                  src="/images/logo.png"
+                  src="./images/logo.png"
                   alt="Logo"
                   className="h-20 w-auto object-contain"
                 />

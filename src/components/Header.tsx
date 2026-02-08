@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
-      <div className="bg-blue-600 text-white py-2">
+      {/* <div className="bg-blue-600 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center gap-4 mb-2 sm:mb-0">
             <a
@@ -22,7 +22,7 @@ export default function Header() {
               className="flex items-center gap-2 hover:text-blue-100"
             >
               <Phone size={16} />
-              <span>+91 702-702-0196</span>
+              <span>+91 797-796-8760</span>
             </a>
             <a
               href="mailto:info@diagnosticlab.com"
@@ -36,23 +36,66 @@ export default function Header() {
             <span>Mon - Sat: 7:00 AM - 5:00 PM | Sun: 7:00 AM - 5:00 PM</span>
           </div>
         </div>
+      </div> */}
+      <div className="relative bg-[#163a59] text-white h-12 overflow-hidden">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col sm:flex-row justify-between items-center text-sm">
+          {/* LEFT : CONTACT INFO */}
+          <div className="flex items-center gap-4 mb-3 sm:mb-0">
+            <span>
+              <b>Call Us : </b>+91 702-702-0196 , 797-796-8760
+            </span>
+
+            <span>
+              <b>Email Us :</b> info@metaphaselabs.com
+            </span>
+          </div>
+
+          {/* RIGHT : TIMING */}
+          <div className="text-center sm:text-right">
+            Mon - Sat: 7:00 AM - 5:00 PM | Sun: 7:00 AM - 5:00 PM
+          </div>
+        </div>
+
+        {/* RIGHT ARROWS */}
+        <div className="absolute top-0 right-0 h-full flex">
+          <span className="w-12 h-full bg-[#0080AA] clip-arrow" />
+          <span className="w-12 h-full bg-[#5D9A3B] clip-arrow -ml-4" />
+          <span className="w-12 h-full bg-[#A2BD3C] clip-arrow -ml-4" />
+        </div>
       </div>
 
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            {/* <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">D+</span>
-            </div> */}
-            <div className="h-12 flex items-center overflow-hidden">
+          {/* <div className="flex items-center gap-2">
+            <div className="h-10 flex items-center overflow-hidden">
               <img
-                src="/images/logo.png"
+                src="./images/logo.png"
                 alt="Logo"
                 className="h-20 w-auto object-contain"
               />
             </div>
-          </div>
+          </div> */}
 
+          <div className="flex items-center">
+            <div
+              className="relative flex items-center"
+              style={{ height: "42px" }}
+            >
+              {/* Height ko fix rakha hai taaki navbar na faile */}
+              <img
+                src="./images/logo.png"
+                alt="Logo"
+                className="max-w-none"
+                style={{
+                  height:
+                    "100px" /* Logo ki asli height yahan se control hogi */,
+                  width: "auto",
+                  objectFit: "contain",
+                  marginTop: "-2px" /* Isse upar ka gap cover ho jayega */,
+                }}
+              />
+            </div>
+          </div>
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("home")}

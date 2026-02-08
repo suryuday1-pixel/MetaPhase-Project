@@ -84,7 +84,9 @@ export default function Hero() {
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-xs">
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-3xl font-bold text-green-600">98%</span>
+                  <span className="text-3xl font-bold text-green-600">
+                    100%
+                  </span>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Accuracy Rate</p>

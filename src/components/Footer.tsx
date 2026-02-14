@@ -22,21 +22,23 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-12 flex items-center overflow-hidden">
+              {/* <div className="h-12 flex items-center overflow-hidden">
                 <img
                   src="./images/logo.png"
                   alt="Logo"
                   className="h-20 w-auto object-contain"
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-lg font-bold">MetaPhase Diagnostic</h3>
-                <p className="text-xs text-gray-400">Precision in Every Test</p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm mb-4">
-              Leading diagnostic laboratory providing accurate and timely test
-              results with state-of-the-art technology.
+            <p className="text-gray-400 text-sm mb-4 text-justify leading-relaxed">
+              Metaphase Diagnostics is now in New Chandigarh, led by Dr. Vikas
+              N. Dubey, MD (KEM, Mumbai), a seasoned professional with over 10
+              years of experience. Dr. Dubey previously served as Lab Head at
+              Pathkind Diagnostics and SRL, managing multiple labs across
+              various states.
             </p>
             <div className="flex gap-3">
               <a
@@ -139,7 +141,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>&copy; © 2025 MetaPhase Pvt.Ltd All rights reserved.</p>
+            <p>&copy; 2025 MetaPhase Pvt.Ltd All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-blue-400 transition">
                 Privacy Policy
